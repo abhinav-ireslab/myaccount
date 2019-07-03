@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Services: Create SSL"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="44.979">
+  <properties />
+  
+  
+            <testcase name="sslfillformtest" time="44.979" classname="MyAccount.com.Test.SSLTest" />
+      
+</testsuite>

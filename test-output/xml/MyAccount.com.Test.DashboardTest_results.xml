@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Dashboard: CreateNode and Terminate"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="251.558">
+  <properties />
+  
+  
+            <testcase name="CreateNode" time="79.268" classname="MyAccount.com.Test.DashboardTest" />
+                <testcase name="PowerOff" time="19.662" classname="MyAccount.com.Test.DashboardTest" />
+                <testcase name="RedirectDashboard" time="22.352" classname="MyAccount.com.Test.DashboardTest" />
+                <testcase name="PowerOn" time="11.854" classname="MyAccount.com.Test.DashboardTest" />
+                <testcase name="Terminate" time="118.422" classname="MyAccount.com.Test.DashboardTest" />
+      
+</testsuite>

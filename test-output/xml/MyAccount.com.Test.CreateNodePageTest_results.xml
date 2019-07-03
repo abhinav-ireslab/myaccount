@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Create Node"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="33.041">
+  <properties />
+  
+  
+            <testcase name="createnode" time="33.041" classname="MyAccount.com.Test.CreateNodePageTest" />
+      
+</testsuite>

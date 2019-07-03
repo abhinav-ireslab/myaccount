@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" configfailurepolicy="skip">
+
+	<listeners>
+
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+
+	</listeners>
+
+ 	<test name="Dashboard: CreateNode and Terminate">
+		<classes>
+			<class name="MyAccount.com.Test.DashboardTest" />
+		</classes>
+	</test>
+	
+		<test name="Payment Method">
+		<classes>
+			<class name="MyAccount.com.Test.PaymentTest" />
+		</classes>
+	</test> 
+	
+	<test name="API: Generate Token">
+		<classes>
+			<class name="MyAccount.com.Test.API" />
+		</classes>
+	</test>
+	
+		<test name="Services: Fire and Terminate Tally Appliance">
+		<classes>
+			<class name="MyAccount.com.Test.Appliances" />
+		</classes>
+	</test>
+	
+		<test name="Services: Create SSL">
+		<classes>
+			<class name="MyAccount.com.Test.SSLTest" />
+		</classes>
+	</test>
+	
+		<test name="Setting: Update Profile">
+		<classes>
+			<class name="MyAccount.com.Test.ProfileUpdateTest" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->

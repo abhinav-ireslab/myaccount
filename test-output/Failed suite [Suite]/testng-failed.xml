@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <test thread-count="5" name="Test1(failed)(failed)">
+    <classes>
+      <class name="MyAccount.com.Test.DashboardTest">
+        <methods>
+          <include name="inititalization"/>
+          <include name="CreateNode"/>
+          <include name="setUp"/>
+          <include name="Terminate"/>
+          <include name="PowerOff"/>
+          <include name="PowerOn"/>
+        </methods>
+      </class> <!-- MyAccount.com.Test.DashboardTest -->
+    </classes>
+  </test> <!-- Test1(failed)(failed) -->
+  <test thread-count="5" name="Test2(failed)(failed)">
+    <classes>
+      <class name="MyAccount.com.Test.PaymentTest">
+        <methods>
+          <include name="inititalization"/>
+          <include name="setUp"/>
+          <include name="RecurringPayment"/>
+        </methods>
+      </class> <!-- MyAccount.com.Test.PaymentTest -->
+    </classes>
+  </test> <!-- Test2(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Services: Fire and Terminate Tally Appliance"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="91.355">
+  <properties />
+  
+  
+            <testcase name="Terminate_Appliance" time="30.028" classname="MyAccount.com.Test.Appliances" />
+                <testcase name="Create_Appliance" time="61.327" classname="MyAccount.com.Test.Appliances" />
+      
+</testsuite>

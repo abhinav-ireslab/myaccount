@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Payment Method"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="140.194">
+  <properties />
+  
+  
+            <testcase name="RecurringPayment" time="30.024" classname="MyAccount.com.Test.PaymentTest" />
+                <testcase name="SignedInvoices" time="12.483" classname="MyAccount.com.Test.PaymentTest" />
+                <testcase name="BankAccountDetails" time="12.005" classname="MyAccount.com.Test.PaymentTest" />
+                <testcase name="AccountStatement" time="16.761" classname="MyAccount.com.Test.PaymentTest" />
+                <testcase name="PayNow" time="68.921" classname="MyAccount.com.Test.PaymentTest" />
+      
+</testsuite>

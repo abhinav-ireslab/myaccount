@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Terminate Node(failed)">
+    <classes>
+      <class name="MyAccount.com.Test.DashboardTest">
+        <methods>
+          <include name="inititalization"/>
+          <include name="setUp"/>
+          <include name="Terminate"/>
+        </methods>
+      </class> <!-- MyAccount.com.Test.DashboardTest -->
+    </classes>
+  </test> <!-- Terminate Node(failed) -->
+  <test thread-count="5" name="Generate Token(failed)">
+    <classes>
+      <class name="MyAccount.com.Test.API">
+        <methods>
+          <include name="inititalization"/>
+          <include name="setUp"/>
+          <include name="APItest"/>
+        </methods>
+      </class> <!-- MyAccount.com.Test.API -->
+    </classes>
+  </test> <!-- Generate Token(failed) -->
+</suite> <!-- Failed suite [Suite] -->
