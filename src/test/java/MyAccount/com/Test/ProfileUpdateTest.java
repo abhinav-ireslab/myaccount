@@ -39,11 +39,11 @@ public class ProfileUpdateTest extends TestBaseNew{
 			
 
 		}
-		  @AfterMethod
-		  public void afterTest() {
-		      driver.quit();
-		      driver = null; 
-		  }
+		@Test
+		public void Close() throws InterruptedException {
+			Thread.sleep(20000);
+			driver.close();
+		}
 
 
 

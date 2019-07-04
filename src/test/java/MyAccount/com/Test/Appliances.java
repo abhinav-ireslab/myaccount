@@ -54,6 +54,11 @@ public class Appliances extends TestBaseNew
 		Appliance.TerminateAppliances();
 	}
 	
+	@Test(priority=3)
+	public void Close() throws InterruptedException {
+		Thread.sleep(20000);
+		driver.close();
+	}
 	
 
 }

@@ -1,149 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="660583" started-at="2019-07-01T12:22:58Z" finished-at="2019-07-01T12:33:58Z">
+  <suite name="Default suite" duration-ms="54300" started-at="2019-07-04T11:19:24Z" finished-at="2019-07-04T11:20:18Z">
     <groups>
     </groups>
-    <test name="Dashboard: CreateNode and Terminate" duration-ms="259953" started-at="2019-07-01T12:22:58Z" finished-at="2019-07-01T12:27:18Z">
-      <class name="MyAccount.com.Test.DashboardTest">
-        <test-method status="PASS" signature="inititalization()[pri:0, instance:MyAccount.com.Test.DashboardTest@467aecef]" name="inititalization" is-config="true" duration-ms="6115" started-at="2019-07-01T12:22:58Z" finished-at="2019-07-01T12:23:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititalization -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:MyAccount.com.Test.DashboardTest@467aecef]" name="setUp" is-config="true" duration-ms="2231" started-at="2019-07-01T12:23:04Z" finished-at="2019-07-01T12:23:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CreateNode()[pri:1, instance:MyAccount.com.Test.DashboardTest@467aecef]" name="CreateNode" duration-ms="79268" started-at="2019-07-01T12:23:06Z" finished-at="2019-07-01T12:24:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateNode -->
-        <test-method status="PASS" signature="PowerOff()[pri:2, instance:MyAccount.com.Test.DashboardTest@467aecef]" name="PowerOff" duration-ms="19662" started-at="2019-07-01T12:24:25Z" finished-at="2019-07-01T12:24:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PowerOff -->
-        <test-method status="PASS" signature="PowerOn()[pri:3, instance:MyAccount.com.Test.DashboardTest@467aecef]" name="PowerOn" duration-ms="11854" started-at="2019-07-01T12:24:45Z" finished-at="2019-07-01T12:24:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PowerOn -->
-        <test-method status="PASS" signature="Terminate()[pri:4, instance:MyAccount.com.Test.DashboardTest@467aecef]" name="Terminate" duration-ms="118422" started-at="2019-07-01T12:24:57Z" finished-at="2019-07-01T12:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Terminate -->
-        <test-method status="PASS" signature="RedirectDashboard()[pri:5, instance:MyAccount.com.Test.DashboardTest@467aecef]" name="RedirectDashboard" duration-ms="22352" started-at="2019-07-01T12:26:55Z" finished-at="2019-07-01T12:27:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RedirectDashboard -->
-      </class> <!-- MyAccount.com.Test.DashboardTest -->
-    </test> <!-- Dashboard: CreateNode and Terminate -->
-    <test name="Payment Method" duration-ms="148399" started-at="2019-07-01T12:27:18Z" finished-at="2019-07-01T12:29:46Z">
-      <class name="MyAccount.com.Test.PaymentTest">
-        <test-method status="PASS" signature="inititalization()[pri:0, instance:MyAccount.com.Test.PaymentTest@42d8062c]" name="inititalization" is-config="true" duration-ms="6134" started-at="2019-07-01T12:27:18Z" finished-at="2019-07-01T12:27:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititalization -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:MyAccount.com.Test.PaymentTest@42d8062c]" name="setUp" is-config="true" duration-ms="2055" started-at="2019-07-01T12:27:24Z" finished-at="2019-07-01T12:27:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="AccountStatement()[pri:1, instance:MyAccount.com.Test.PaymentTest@42d8062c]" name="AccountStatement" duration-ms="16761" started-at="2019-07-01T12:27:26Z" finished-at="2019-07-01T12:27:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AccountStatement -->
-        <test-method status="PASS" signature="SignedInvoices()[pri:2, instance:MyAccount.com.Test.PaymentTest@42d8062c]" name="SignedInvoices" duration-ms="12483" started-at="2019-07-01T12:27:43Z" finished-at="2019-07-01T12:27:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SignedInvoices -->
-        <test-method status="PASS" signature="BankAccountDetails()[pri:3, instance:MyAccount.com.Test.PaymentTest@42d8062c]" name="BankAccountDetails" duration-ms="12005" started-at="2019-07-01T12:27:55Z" finished-at="2019-07-01T12:28:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BankAccountDetails -->
-        <test-method status="PASS" signature="PayNow()[pri:4, instance:MyAccount.com.Test.PaymentTest@42d8062c]" name="PayNow" duration-ms="68921" started-at="2019-07-01T12:28:07Z" finished-at="2019-07-01T12:29:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PayNow -->
-        <test-method status="PASS" signature="RecurringPayment()[pri:5, instance:MyAccount.com.Test.PaymentTest@42d8062c]" name="RecurringPayment" duration-ms="30024" started-at="2019-07-01T12:29:16Z" finished-at="2019-07-01T12:29:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RecurringPayment -->
-      </class> <!-- MyAccount.com.Test.PaymentTest -->
-    </test> <!-- Payment Method -->
-    <test name="API: Generate Token" duration-ms="53404" started-at="2019-07-01T12:29:46Z" finished-at="2019-07-01T12:30:39Z">
-      <class name="MyAccount.com.Test.API">
-        <test-method status="PASS" signature="inititalization()[pri:0, instance:MyAccount.com.Test.API@5f3a4b84]" name="inititalization" is-config="true" duration-ms="6291" started-at="2019-07-01T12:29:46Z" finished-at="2019-07-01T12:29:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititalization -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:MyAccount.com.Test.API@5f3a4b84]" name="setUp" is-config="true" duration-ms="2331" started-at="2019-07-01T12:29:52Z" finished-at="2019-07-01T12:29:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Generate_Token()[pri:0, instance:MyAccount.com.Test.API@5f3a4b84]" name="Generate_Token" duration-ms="44778" started-at="2019-07-01T12:29:55Z" finished-at="2019-07-01T12:30:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Generate_Token -->
-      </class> <!-- MyAccount.com.Test.API -->
-    </test> <!-- API: Generate Token -->
-    <test name="Services: Fire and Terminate Tally Appliance" duration-ms="100072" started-at="2019-07-01T12:30:40Z" finished-at="2019-07-01T12:32:20Z">
-      <class name="MyAccount.com.Test.Appliances">
-        <test-method status="PASS" signature="inititalization()[pri:0, instance:MyAccount.com.Test.Appliances@13c27452]" name="inititalization" is-config="true" duration-ms="6527" started-at="2019-07-01T12:30:40Z" finished-at="2019-07-01T12:30:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititalization -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:MyAccount.com.Test.Appliances@13c27452]" name="setUp" is-config="true" duration-ms="2184" started-at="2019-07-01T12:30:46Z" finished-at="2019-07-01T12:30:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Create_Appliance()[pri:1, instance:MyAccount.com.Test.Appliances@13c27452]" name="Create_Appliance" duration-ms="61327" started-at="2019-07-01T12:30:48Z" finished-at="2019-07-01T12:31:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Create_Appliance -->
-        <test-method status="PASS" signature="Terminate_Appliance()[pri:2, instance:MyAccount.com.Test.Appliances@13c27452]" name="Terminate_Appliance" duration-ms="30028" started-at="2019-07-01T12:31:50Z" finished-at="2019-07-01T12:32:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Terminate_Appliance -->
-      </class> <!-- MyAccount.com.Test.Appliances -->
-    </test> <!-- Services: Fire and Terminate Tally Appliance -->
-    <test name="Services: Create SSL" duration-ms="54730" started-at="2019-07-01T12:32:20Z" finished-at="2019-07-01T12:33:14Z">
+    <test name="Default test" duration-ms="54300" started-at="2019-07-04T11:19:24Z" finished-at="2019-07-04T11:20:18Z">
       <class name="MyAccount.com.Test.SSLTest">
-        <test-method status="PASS" signature="inititalization()[pri:0, instance:MyAccount.com.Test.SSLTest@a38d7a3]" name="inititalization" is-config="true" duration-ms="6074" started-at="2019-07-01T12:32:20Z" finished-at="2019-07-01T12:32:26Z">
+        <test-method status="PASS" signature="inititalization()[pri:0, instance:MyAccount.com.Test.SSLTest@3632be31]" name="inititalization" is-config="true" duration-ms="6734" started-at="2019-07-04T11:19:24Z" finished-at="2019-07-04T11:19:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inititalization -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:MyAccount.com.Test.SSLTest@a38d7a3]" name="setUp" is-config="true" duration-ms="2176" started-at="2019-07-01T12:32:26Z" finished-at="2019-07-01T12:32:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:MyAccount.com.Test.SSLTest@3632be31]" name="setUp" is-config="true" duration-ms="3078" started-at="2019-07-04T11:19:31Z" finished-at="2019-07-04T11:19:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sslfillformtest()[pri:0, instance:MyAccount.com.Test.SSLTest@a38d7a3]" name="sslfillformtest" duration-ms="44979" started-at="2019-07-01T12:32:28Z" finished-at="2019-07-01T12:33:13Z">
+        <test-method status="PASS" signature="sslfillformtest()[pri:0, instance:MyAccount.com.Test.SSLTest@3632be31]" name="sslfillformtest" duration-ms="44467" started-at="2019-07-04T11:19:34Z" finished-at="2019-07-04T11:20:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sslfillformtest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:MyAccount.com.Test.SSLTest@a38d7a3]" name="afterTest" is-config="true" duration-ms="1498" started-at="2019-07-01T12:33:13Z" finished-at="2019-07-01T12:33:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
       </class> <!-- MyAccount.com.Test.SSLTest -->
-    </test> <!-- Services: Create SSL -->
-    <test name="Setting: Update Profile" duration-ms="43762" started-at="2019-07-01T12:33:14Z" finished-at="2019-07-01T12:33:58Z">
-      <class name="MyAccount.com.Test.ProfileUpdateTest">
-        <test-method status="PASS" signature="inititalization()[pri:0, instance:MyAccount.com.Test.ProfileUpdateTest@87f383f]" name="inititalization" is-config="true" duration-ms="6202" started-at="2019-07-01T12:33:14Z" finished-at="2019-07-01T12:33:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititalization -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:MyAccount.com.Test.ProfileUpdateTest@87f383f]" name="setUp" is-config="true" duration-ms="2140" started-at="2019-07-01T12:33:21Z" finished-at="2019-07-01T12:33:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="updatepro()[pri:0, instance:MyAccount.com.Test.ProfileUpdateTest@87f383f]" name="updatepro" duration-ms="34260" started-at="2019-07-01T12:33:23Z" finished-at="2019-07-01T12:33:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatepro -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:MyAccount.com.Test.ProfileUpdateTest@87f383f]" name="afterTest" is-config="true" duration-ms="1156" started-at="2019-07-01T12:33:57Z" finished-at="2019-07-01T12:33:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- MyAccount.com.Test.ProfileUpdateTest -->
-    </test> <!-- Setting: Update Profile -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

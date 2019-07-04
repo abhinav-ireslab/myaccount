@@ -55,5 +55,11 @@ public class API extends TestBaseNew
 		APIPage API = new APIPage();
 		API.Delete_token();
 	}
+	
+	@Test(priority=3)
+	public void Close() throws InterruptedException {
+		Thread.sleep(20000);
+		driver.close();
+	}
 
 }

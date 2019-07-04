@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="API: Generate Token"
-           tests="2"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="61.861">
+           time="76.467">
   <properties />
   
   
-            <testcase name="Delete_Token" time="15.998" classname="MyAccount.com.Test.API" />
-                <testcase name="Generate_Token" time="45.863" classname="MyAccount.com.Test.API" />
+            <testcase name="Close" time="20.667" classname="MyAccount.com.Test.API" />
+                <testcase name="Delete_Token" time="11.776" classname="MyAccount.com.Test.API" />
+                <testcase name="Generate_Token" time="44.024" classname="MyAccount.com.Test.API" />
       
 </testsuite>

@@ -80,5 +80,11 @@ public class DashboardTest extends TestBaseNew
 		Dashboard = new DashboardPage();
 		Dashboard.RedirectDashboard();
 	}
+	
+	@Test(priority=6)
+	public void Close() throws InterruptedException {
+		Thread.sleep(20000);
+		driver.close();
+	}
 
 }

@@ -58,18 +58,14 @@ public class LoginPageTest extends TestBaseNew{
 		
          
     }
-	
+	@Test(priority=2)
+	public void Close() throws InterruptedException {
+		Thread.sleep(20000);
+		driver.close();
+	}
 	/*@AfterMethod
 	public void tearDown(){
 		driver.quit();
 	}*/
-	
-	
-
-	
-	
-		
-		
-	
 
 }

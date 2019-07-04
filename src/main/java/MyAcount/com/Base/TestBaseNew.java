@@ -47,8 +47,23 @@ public class TestBaseNew {
 		public static void inititalization() {
 			//System.out.println("Intialization");
 			String browserName = prop.getProperty("browser");
+			
+			String os = System.getProperty("os.name").toLowerCase();
+			if (os.contains("win")){
+    //Operating system is based on Windows
+				System.setProperty("webdriver.gecko.driver","C:\\Users\\E2E\\eclipse-workspace\\AutomationE2E\\Drivers\\geckodriver.exe");
+				driver = (WebDriver) new FirefoxDriver();
+			}
+			//else if (os.contains("osx")){
+    //Operating system is Apple OSX based
+			//}      
+			else if (os.contains("nix") || os.contains("aix") || os.contains("nux")){
+    //Operating system is based on Linux/Unix/*AIX
+				System.setProperty("webdriver.gecko.driver","C://Users//E2E//eclipse-workspace//AutomationE2E//Drivers//geckodriver.exe");
+				driver = (WebDriver) new FirefoxDriver();
+			
 			//System.out.println("Browser Name: "+browserName);
-			if(browserName.equals("Firefox")) {
+			/*if(browserName.equals("Firefox")) {
 				//System.out.println("Browser Name: "+browserName);
 				System.setProperty("webdriver.gecko.driver","C:\\Users\\E2E\\eclipse-workspace\\AutomationE2E\\Drivers\\geckodriver.exe");
 			driver = (WebDriver) new FirefoxDriver();
@@ -56,7 +71,7 @@ public class TestBaseNew {
 			}else if (browserName.equals("chrome")){
 				System.setProperty("webdriver.chrome.driver","C:\\Users\\E2E\\eclipse-workspace\\AutomationE2E\\Drivers\\chromedrive.exe");
 				driver = (WebDriver) new ChromeDriver();
-			}
+*/			}
 		
 		//driver.manage().window().maximize();
 		Dimension d = new Dimension(1550,800); 

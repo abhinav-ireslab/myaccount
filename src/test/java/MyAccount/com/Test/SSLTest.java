@@ -34,22 +34,11 @@ public class SSLTest extends TestBaseNew{
 		}
 		@Test
 		public void sslfillformtest() throws InterruptedException, IOException {
+			//Thread.sleep(20000);
 			SSL = new SSLPage();
 			SSL.sslfillform();
 			SSL.nextbutton();
 			SSL.nextbutton1();
 			
 		}
-		 @AfterMethod
-		  public void afterTest() {
-		      driver.quit();
-		      driver = null; 
-		  }
-
-
-
-	{
-		
-
 }
-		}

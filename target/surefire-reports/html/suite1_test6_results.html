@@ -12,11 +12,83 @@
 <body>
 <h1>Setting: Update Profile</h1>
 <p>
-  Test duration: 45.131s
+  Test duration: 57.406s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">MyAccount.com.Test.ProfileUpdateTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  updatepro
+      </td>
+  <td class="duration">
+    0.003s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;LAPTOP-I2DQ2R0M&apos;, ip: &apos;10.120.10.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 30184, moz:profile: C:\Users\E2E\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: 13a32446-2f2b-4bef-b441-fa796e343dd6</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br />
+              org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)<br />
+              MyAccount.com.pages.ProfileUpdate.proupdate(ProfileUpdate.java:57)<br />
+              MyAccount.com.Test.ProfileUpdateTest.updatepro(ProfileUpdateTest.java:37)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
@@ -27,10 +99,10 @@
             
 <tr>
   <td class="method">
-                  updatepro
+                  Close
       </td>
   <td class="duration">
-    33.673s
+    20.790s
   </td>
   <td class="result">
         
