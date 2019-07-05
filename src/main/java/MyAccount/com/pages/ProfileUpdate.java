@@ -70,7 +70,7 @@ public class ProfileUpdate extends TestBaseNew
 		Thread.sleep(3000);
 		enter_zip.sendKeys("110023");
 		Thread.sleep(3000);
-		ele.submit();
+		//ele.submit();
 
 	}
 }

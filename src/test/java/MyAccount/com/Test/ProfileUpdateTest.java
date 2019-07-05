@@ -35,6 +35,7 @@ public class ProfileUpdateTest extends TestBaseNew{
 		public void updatepro() throws Exception {
 			Prof = new ProfileUpdate();
 			Prof.proupdate();
+			Thread.sleep(5000);
 			Prof.update();
 			
 
