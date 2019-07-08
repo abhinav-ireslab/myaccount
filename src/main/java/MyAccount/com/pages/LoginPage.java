@@ -45,7 +45,9 @@ public class LoginPage extends TestBaseNew {
 
 	public CreateNodePage login(String un, String pass) throws IOException {
 		username.sendKeys(un);
+		System.out.println(username);
 		password.sendKeys(pass);
+		System.out.println(password);
 		Signin.click();
 		return new CreateNodePage();
 	}
