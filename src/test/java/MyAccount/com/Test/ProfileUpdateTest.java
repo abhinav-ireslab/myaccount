@@ -40,12 +40,6 @@ public class ProfileUpdateTest extends TestBaseNew{
 			
 
 		}
-		@Test
-		public void Close() throws InterruptedException {
-			Thread.sleep(20000);
-			driver.close();
-		}
-
 
 
 }

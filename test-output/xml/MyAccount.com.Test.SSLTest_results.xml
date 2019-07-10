@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="44.979">
+           time="42.305">
   <properties />
   
   
-            <testcase name="sslfillformtest" time="44.979" classname="MyAccount.com.Test.SSLTest" />
+            <testcase name="sslfillformtest" time="42.305" classname="MyAccount.com.Test.SSLTest" />
       
 </testsuite>

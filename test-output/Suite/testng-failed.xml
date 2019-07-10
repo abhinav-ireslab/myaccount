@@ -5,26 +5,42 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="Terminate Node(failed)">
+  <test thread-count="5" name="Dashboard: CreateNode and Terminate(failed)">
     <classes>
       <class name="MyAccount.com.Test.DashboardTest">
         <methods>
           <include name="inititalization"/>
+          <include name="CreateNode"/>
           <include name="setUp"/>
+          <include name="Close"/>
+          <include name="RedirectDashboard"/>
           <include name="Terminate"/>
+          <include name="PowerOff"/>
+          <include name="PowerOn"/>
         </methods>
       </class> <!-- MyAccount.com.Test.DashboardTest -->
     </classes>
-  </test> <!-- Terminate Node(failed) -->
-  <test thread-count="5" name="Generate Token(failed)">
+  </test> <!-- Dashboard: CreateNode and Terminate(failed) -->
+  <test thread-count="5" name="Payment Method(failed)">
     <classes>
-      <class name="MyAccount.com.Test.API">
+      <class name="MyAccount.com.Test.PaymentTest">
         <methods>
           <include name="inititalization"/>
+          <include name="PayNow"/>
           <include name="setUp"/>
-          <include name="APItest"/>
         </methods>
-      </class> <!-- MyAccount.com.Test.API -->
+      </class> <!-- MyAccount.com.Test.PaymentTest -->
     </classes>
-  </test> <!-- Generate Token(failed) -->
+  </test> <!-- Payment Method(failed) -->
+  <test thread-count="5" name="Setting: Update Profile(failed)">
+    <classes>
+      <class name="MyAccount.com.Test.ProfileUpdateTest">
+        <methods>
+          <include name="inititalization"/>
+          <include name="updatepro"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- MyAccount.com.Test.ProfileUpdateTest -->
+    </classes>
+  </test> <!-- Setting: Update Profile(failed) -->
 </suite> <!-- Failed suite [Suite] -->

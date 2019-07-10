@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Dashboard: CreateNode and Terminate(failed)">
     <classes>
-      <class name="MyAccount.com.Test.SSLTest">
+      <class name="MyAccount.com.Test.DashboardTest">
         <methods>
-          <include name="sslfillformtest"/>
           <include name="inititalization"/>
+          <include name="CreateNode"/>
+          <include name="setUp"/>
+          <include name="Close"/>
+          <include name="RedirectDashboard"/>
+          <include name="Terminate"/>
+          <include name="PowerOff"/>
+          <include name="PowerOn"/>
+        </methods>
+      </class> <!-- MyAccount.com.Test.DashboardTest -->
+    </classes>
+  </test> <!-- Dashboard: CreateNode and Terminate(failed) -->
+  <test thread-count="5" name="Payment Method(failed)">
+    <classes>
+      <class name="MyAccount.com.Test.PaymentTest">
+        <methods>
+          <include name="inititalization"/>
+          <include name="PayNow"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- MyAccount.com.Test.SSLTest -->
+      </class> <!-- MyAccount.com.Test.PaymentTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Payment Method(failed) -->
+  <test thread-count="5" name="Setting: Update Profile(failed)">
+    <classes>
+      <class name="MyAccount.com.Test.ProfileUpdateTest">
+        <methods>
+          <include name="inititalization"/>
+          <include name="updatepro"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- MyAccount.com.Test.ProfileUpdateTest -->
+    </classes>
+  </test> <!-- Setting: Update Profile(failed) -->
+</suite> <!-- Failed suite [Suite] -->
