@@ -51,13 +51,13 @@ public class LoginPageTest extends TestBaseNew{
 		
 	}*/
 	
+
 	@Test(priority=1)
     public void login() throws IOException{
 		 CreateNode=lp.login(prop.getProperty("username"),prop.getProperty("password"));
-	
-		
          
     }
+	
 	@Test(priority=2)
 	public void Close() throws InterruptedException {
 		Thread.sleep(20000);

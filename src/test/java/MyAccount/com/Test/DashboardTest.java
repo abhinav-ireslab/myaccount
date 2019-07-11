@@ -1,17 +1,15 @@
 package MyAccount.com.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.maven.surefire.shade.org.apache.maven.shared.utils.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import MyAccount.com.pages.CreateNodePage;
 import MyAccount.com.pages.DashboardPage;
 import MyAccount.com.pages.LoginPage;
@@ -38,7 +36,7 @@ public class DashboardTest extends TestBaseNew
 		CreateNode = new CreateNodePage();
 	}
 
-	@Test(priority=1)
+	@Test(priority = 1)
 	public void CreateNode() throws InterruptedException, IOException
 	{
 		CreateNode = new CreateNodePage();// login page constructor for creating object
@@ -46,40 +44,82 @@ public class DashboardTest extends TestBaseNew
 		Thread.sleep(1000);
 	}
 
-	@Test(priority=2)
+	@Test(priority = 2)
 	public void PowerOff() throws InterruptedException, IOException
 	{
-		Thread.sleep(1000);
-		Dashboard = new DashboardPage();
-		Dashboard.PowerOff();
+		try
+		{
+			Thread.sleep(1000);
+			Dashboard = new DashboardPage();
+			Dashboard.PowerOff();
+
+		} catch (Exception e)
+		{
+
+			File scrFile = (((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE));
+			FileUtils.copyFile(scrFile,
+					new File("C:\\Users\\E2E\\Pictures\\Screen\\Images" + System.currentTimeMillis() + ".png"));
+
+		}
 	}
 
-	@Test(priority=3)
+	@Test(priority = 3)
 	public void PowerOn() throws InterruptedException, IOException
 	{
-		Thread.sleep(1000);
-		Dashboard = new DashboardPage();
-		Dashboard.PowerOn();
+		try
+		{
+			Thread.sleep(1000);
+			Dashboard = new DashboardPage();
+			Dashboard.PowerOn();
+		} catch (Exception e)
+		{
+
+			File scrFile = (((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE));
+			FileUtils.copyFile(scrFile,
+					new File("C:\\Users\\E2E\\Pictures\\Screen\\Images" + System.currentTimeMillis() + ".png"));
+
+		}
+
 	}
 
 	@SuppressWarnings("deprecation")
-	@Test(priority=4)
+	@Test(priority = 4)
 	public void Terminate() throws InterruptedException, IOException
 	{
+		try
+		{
+			Thread.sleep(2000);
+			WebDriverWait wait = new WebDriverWait(driver, 1);
+			wait.pollingEvery(1, TimeUnit.MINUTES);
+			Dashboard = new DashboardPage();
+			Dashboard.Terminate();
+		} catch (Exception e)
+		{
 
-		Thread.sleep(2000);
-		WebDriverWait wait = new WebDriverWait(driver, 1);
-		wait.pollingEvery(1, TimeUnit.MINUTES);
-		Dashboard = new DashboardPage();
-		Dashboard.Terminate();
+			File scrFile = (((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE));
+			FileUtils.copyFile(scrFile,
+					new File("C:\\Users\\E2E\\Pictures\\Screen\\Images" + System.currentTimeMillis() + ".png"));
+
+		}
 
 	}
-	
-	@Test(priority=5)
-	public void RedirectDashboard() throws InterruptedException, IOException {
-		Dashboard = new DashboardPage();
-		Dashboard.RedirectDashboard();
+
+	@Test(priority = 5)
+	public void RedirectDashboard() throws InterruptedException, IOException
+	{
+		try
+		{
+			Dashboard = new DashboardPage();
+			Dashboard.RedirectDashboard();
+		} catch (Exception e)
+		{
+
+			File scrFile = (((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE));
+			FileUtils.copyFile(scrFile,
+					new File("C:\\Users\\E2E\\Pictures\\Screen\\Images" + System.currentTimeMillis() + ".png"));
+
+		}
+
 	}
-	
 
 }
