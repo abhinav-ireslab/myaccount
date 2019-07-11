@@ -10,11 +10,7 @@
       <class name="MyAccount.com.Test.DashboardTest">
         <methods>
           <include name="inititalization"/>
-          <include name="CreateNode"/>
           <include name="setUp"/>
-          <include name="Close"/>
-          <include name="RedirectDashboard"/>
-          <include name="Terminate"/>
           <include name="PowerOff"/>
           <include name="PowerOn"/>
         </methods>

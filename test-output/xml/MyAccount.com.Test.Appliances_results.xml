@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="107.543">
+           time="107.467">
   <properties />
   
   
-            <testcase name="Create_Appliance" time="59.361" classname="MyAccount.com.Test.Appliances" />
-                <testcase name="Close" time="20.666" classname="MyAccount.com.Test.Appliances" />
-                <testcase name="Terminate_Appliance" time="27.516" classname="MyAccount.com.Test.Appliances" />
+            <testcase name="Close" time="20.651" classname="MyAccount.com.Test.Appliances" />
+                <testcase name="Create_Appliance" time="59.314" classname="MyAccount.com.Test.Appliances" />
+                <testcase name="Terminate_Appliance" time="27.502" classname="MyAccount.com.Test.Appliances" />
       
 </testsuite>

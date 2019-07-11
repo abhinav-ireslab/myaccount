@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="74.421">
+           time="74.179">
   <properties />
   
   
-            <testcase name="Generate_Token" time="42.668" classname="MyAccount.com.Test.API" />
-                <testcase name="Delete_Token" time="11.092" classname="MyAccount.com.Test.API" />
-                <testcase name="Close" time="20.661" classname="MyAccount.com.Test.API" />
+            <testcase name="Generate_Token" time="42.624" classname="MyAccount.com.Test.API" />
+                <testcase name="Close" time="20.792" classname="MyAccount.com.Test.API" />
+                <testcase name="Delete_Token" time="10.763" classname="MyAccount.com.Test.API" />
       
 </testsuite>
