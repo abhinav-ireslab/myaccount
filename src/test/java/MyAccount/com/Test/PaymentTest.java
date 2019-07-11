@@ -45,7 +45,7 @@ public class PaymentTest extends TestBaseNew
 
 
 	}
-	@Test(priority=4)
+	@Test(priority=4,enabled=false)
 	public void PayNow() throws InterruptedException, IOException
 	{
 		Thread.sleep(10000);
