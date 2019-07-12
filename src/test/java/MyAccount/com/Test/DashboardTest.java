@@ -104,7 +104,7 @@ public class DashboardTest extends TestBaseNew
 
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 5,enabled=false)
 	public void RedirectDashboard() throws InterruptedException, IOException
 	{
 		try

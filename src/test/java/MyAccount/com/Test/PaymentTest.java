@@ -1,7 +1,11 @@
 package MyAccount.com.Test;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.apache.maven.surefire.shade.org.apache.maven.shared.utils.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -35,7 +39,7 @@ public class PaymentTest extends TestBaseNew
 		CreateNode = new CreateNodePage();
 	}
 	
-	@Test(priority=5)
+	@Test(priority=6)
 	public void RecurringPayment() throws InterruptedException, IOException
 	{
 		Thread.sleep(10000);
@@ -45,13 +49,23 @@ public class PaymentTest extends TestBaseNew
 
 
 	}
-	@Test(priority=4,enabled=false)
+	@Test(priority=4)
 	public void PayNow() throws InterruptedException, IOException
 	{
+		try {
 		Thread.sleep(10000);
 		Payment = new PaymentPage();
 		Payment.PayNow();
 		System.out.println("Successully done Pay Now");
+		}
+		catch(Exception e)
+		{
+
+			File scrFile = (((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE));
+			FileUtils.copyFile(scrFile,
+					new File("C:\\Users\\E2E\\Pictures\\Screen\\Images" + System.currentTimeMillis() + ".png"));
+
+		}
 	}
 	
 
