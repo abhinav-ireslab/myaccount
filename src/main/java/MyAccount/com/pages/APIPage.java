@@ -67,7 +67,7 @@ public class APIPage extends TestBaseNew
 	@Test(priority=2)
 	public void Delete_token() throws InterruptedException
 	{
-		
+		Thread.sleep(5000);
 		deletetoken.click();
 		driver.navigate().refresh();
 		
