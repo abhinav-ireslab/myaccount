@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 import MyAcount.com.Base.TestBaseNew;
 
@@ -42,6 +43,7 @@ public class APIPage extends TestBaseNew
 		PageFactory.initElements(driver, this);
 	}
 
+	@Test(priority=1)
 	public void Generate_token() throws InterruptedException
 	{
 		api.click();
@@ -55,12 +57,14 @@ public class APIPage extends TestBaseNew
 		generatebutton.click();
 		Thread.sleep(5000);
 		close.click();
+		Thread.sleep(5000);
 		view.click();
 		Thread.sleep(5000);
 		cut.click();
 
 	}
 	
+	@Test(priority=2)
 	public void Delete_token() throws InterruptedException
 	{
 		
