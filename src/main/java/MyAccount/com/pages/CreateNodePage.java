@@ -2,7 +2,8 @@ package MyAccount.com.pages;
 
 import java.io.IOException;
 
-
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -18,18 +19,18 @@ public class CreateNodePage extends TestBaseNew{
 	@FindBy(xpath ="//button[contains(text(),'Create Node')]")
 	WebElement createnodebutton;
 
-	@FindBy(xpath = "//a[@href='/configuration?selected_host=&template_id=1442&template_name=Ubuntu-14.04']//div[@class='customCard osCard Ubuntu']")
+	@FindBy(xpath = "//td[contains(text(),'C2.8GB-CentOS-7.5')]")
 	WebElement centos75;
 	
-	@FindBy(xpath = "//*[@class='customCard planCard undefined']")
+	@FindBy(xpath = "//button[contains(text(),'Create VM')]")
 	WebElement SelectPlanCentOS75;
  
-	@FindBy(xpath = "//input[@id='node_name']")
+	@FindBy(xpath = "//*[@id=\"nodeName\"]")
 	WebElement nodename ;
 	@FindBy(xpath = "//*[contains(text,'Virtual Compute Nodes Summary')]")
 	WebElement nodesummary;
 	
-	@FindBy(xpath = "//input[@type='submit']")
+	@FindBy(xpath = "//html/body/app-dashboard/div/main/div/register-node/div/div/form/div/div[10]/div/button")
 	WebElement mynode;
    @FindBy(xpath = "//div[contains(text(),'Running')]")
       WebElement DynamicNodeStatus_Running;
@@ -60,12 +61,28 @@ public class CreateNodePage extends TestBaseNew{
 		 Thread.sleep(5000);
 		 nodename.sendKeys("Test");
 		 Thread.sleep(5000);
+		try
+		{
+		 JavascriptExecutor jse = (JavascriptExecutor)driver;
+		 jse.executeScript("window.scrollBy(0,2000)");
+		
+		}
+		catch(Exception e)
+		{
+			System.out.println("Not Scrolled");
+		}
+		 
 		 mynode.click();
 		 Thread.sleep(5000);
 		 //driver.navigate().refresh();
 		 
 		 	 
 	}
+	private JavascriptExecutor javascriptExecutor(WebDriver driver) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	public boolean validatenodestatus() {
 		return DynamicNodeStatus_Running.isDisplayed();
 	}
