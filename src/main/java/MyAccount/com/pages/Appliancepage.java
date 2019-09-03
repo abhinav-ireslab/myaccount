@@ -35,13 +35,17 @@ public class Appliancepage extends TestBaseNew
 	WebElement password;
 	@FindBy(xpath = "//input[@id='confirm-password']")
 	WebElement confirmpassword;
+	
+	@FindBy(xpath="//*[@id=\"email\"]")
+	WebElement email;
+	
 	@FindBy(xpath = "//button[@class='btn btn-primary appliance-button']")
 	WebElement createbtn;
 
 	@FindBy(xpath = "//a[@href='javascript:void(0);'][contains(text(),'Payment Methods')]")
 	WebElement Payment;
 
-	@FindBy(xpath = "//tbody//tr[1]//td[6]//div[1]//button[2]//i[1]")
+	@FindBy(xpath = "//*[@id=\"appliance_root\"]/div/div[4]/div[1]/div/div/div[2]/table/tbody/tr[1]/td[6]/div/button")
 	WebElement Terminate;
 	
 	@FindBy(xpath="/html/body/div[12]/div/div/div/div/button[1]")
@@ -57,8 +61,8 @@ public class Appliancepage extends TestBaseNew
 	{
 
 		driver.navigate().refresh();
-		Thread.sleep(10000);
-		Payment.click();
+		/*Thread.sleep(10000);
+		Appl.click();*/
 		Thread.sleep(5000);
 		Appl.click();
 		Thread.sleep(5000);
@@ -71,7 +75,7 @@ public class Appliancepage extends TestBaseNew
 		friendlyname.sendKeys("TestApp");
 		password.sendKeys("Jan@1234");
 		confirmpassword.sendKeys("Jan@1234");
-
+		email.sendKeys("abhinav.garg+postpaid@e2enetworks.com");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		// js.executeScript("Window.scrollBy(0,1000)");
 		js.executeScript("arguments[0].scrollIntoView();", createbtn);
@@ -83,7 +87,7 @@ public class Appliancepage extends TestBaseNew
 
 	public void TerminateAppliances() throws InterruptedException
 	{
-		if (driver.findElements(By.xpath("//tbody//tr[1]//td[6]//div[1]//button[2]//i[1]")).size() !=0)
+		if (driver.findElements(By.xpath("//*[@id=\"appliance_root\"]/div/div[4]/div[1]/div/div/div[2]/table/tbody/tr[1]/td[6]/div/button")).size() !=0)
 		{
 			Thread.sleep(5000);
 			Terminate.click();

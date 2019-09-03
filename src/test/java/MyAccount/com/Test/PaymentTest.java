@@ -88,7 +88,7 @@ public class PaymentTest extends TestBaseNew
 		System.out.println("Successully view Signed Invoices section");
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3, enabled=false)
 	public void BankAccountDetails() throws InterruptedException, IOException {
 		Thread.sleep(5000);
 		Payment = new PaymentPage();

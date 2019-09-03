@@ -18,12 +18,12 @@ public class ProfileUpdate extends TestBaseNew
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//*[@id=\"sidenav-menu\"]/ul/li[2]/a")
-	WebElement payment_metthod;
-	@FindBy(xpath = "//*[@id=\"sidenav-menu\"]/ul/li[3]/a")
-	WebElement Infra;
+	@FindBy(xpath = "//*[@id=\\\"sidenav-menu\\\"]/ul/li[4]/a")
+	WebElement billing;
+	@FindBy(xpath = "//*[@id=\\\"sidenav-menu\\\"]/ul/li[5]/a")
+	WebElement securitypayment;
 
-	@FindBy(xpath = "//*[@id=\"sidenav-menu\"]/ul/li[5]/ul/li[1]/a")
+	@FindBy(xpath = "//*[@id=\"sidenav-menu\"]/ul/li[4]/ul/li[4]/a")
 	WebElement Profile;
 
 	@FindBy(xpath = "//*[@id=\"id_first_name\"]")
@@ -33,14 +33,14 @@ public class ProfileUpdate extends TestBaseNew
 	@FindBy(xpath = "//*[@id=\"id_first_name\"]")
 	WebElement enter_text;
 
-	@FindBy(xpath = "//*[@id=\"id_zip\"]")
+	/*@FindBy(xpath = "//*[@id=\"id_zip\"]")
 	// @FindBy(xpath ="//*[@id=\\\"id_zip\\\"]")
 	WebElement text_clear_zip;
 
 	@FindBy(xpath = "//*[@id=\"id_zip\"]")
-	WebElement enter_zip;
+	WebElement enter_zip;*/
 
-	@FindBy(xpath = "/html/body/div[2]/div[2]/div[1]/form/div[2]/div/div[2]/button")
+	@FindBy(xpath = "//*[@id=\"personalDetailsButton\"]")
 	WebElement ele;
 
 	public void update()
@@ -55,9 +55,9 @@ public class ProfileUpdate extends TestBaseNew
 	public void proupdate() throws InterruptedException
 	{
 		driver.navigate().refresh();
-		payment_metthod.click();
-		Thread.sleep(5000);
-		Infra.click();
+		//billing.click();
+		//Thread.sleep(5000);
+		//securitypayment.click();
 		Thread.sleep(5000);
 		Profile.click();
 		Thread.sleep(5000);
@@ -66,11 +66,11 @@ public class ProfileUpdate extends TestBaseNew
 		Thread.sleep(5000);
 		enter_text.sendKeys("Abhinav Garg");
 		Thread.sleep(3000);
-		text_clear_zip.clear();
+		/*text_clear_zip.clear();
 		Thread.sleep(3000);
 		enter_zip.sendKeys("110023");
-		Thread.sleep(3000);
-		//ele.submit();
+		Thread.sleep(3000);*/
+		ele.submit();
 
 	}
 }

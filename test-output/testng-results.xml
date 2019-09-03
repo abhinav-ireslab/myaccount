@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="93268" started-at="2019-09-03T09:11:27Z" finished-at="2019-09-03T09:13:00Z">
+  <suite name="Default suite" duration-ms="46846" started-at="2019-09-03T12:46:58Z" finished-at="2019-09-03T12:47:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="93268" started-at="2019-09-03T09:11:27Z" finished-at="2019-09-03T09:13:00Z">
-      <class name="MyAccount.com.Test.CreateNodePageTest">
-        <test-method status="PASS" signature="inititalization()[pri:0, instance:MyAccount.com.Test.CreateNodePageTest@3632be31]" name="inititalization" is-config="true" duration-ms="6658" started-at="2019-09-03T09:11:27Z" finished-at="2019-09-03T09:11:34Z">
+    <test name="Default test" duration-ms="46846" started-at="2019-09-03T12:46:58Z" finished-at="2019-09-03T12:47:45Z">
+      <class name="MyAccount.com.Test.ProfileUpdateTest">
+        <test-method status="PASS" signature="inititalization()[pri:0, instance:MyAccount.com.Test.ProfileUpdateTest@3632be31]" name="inititalization" is-config="true" duration-ms="11345" started-at="2019-09-03T12:46:58Z" finished-at="2019-09-03T12:47:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inititalization -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:MyAccount.com.Test.CreateNodePageTest@3632be31]" name="setUp" is-config="true" duration-ms="5325" started-at="2019-09-03T09:11:34Z" finished-at="2019-09-03T09:11:39Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:MyAccount.com.Test.ProfileUpdateTest@3632be31]" name="setUp" is-config="true" duration-ms="5503" started-at="2019-09-03T12:47:09Z" finished-at="2019-09-03T12:47:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createnode()[pri:0, instance:MyAccount.com.Test.CreateNodePageTest@3632be31]" name="createnode" duration-ms="81271" started-at="2019-09-03T09:11:39Z" finished-at="2019-09-03T09:13:00Z">
+        <test-method status="PASS" signature="updatepro()[pri:0, instance:MyAccount.com.Test.ProfileUpdateTest@3632be31]" name="updatepro" duration-ms="29951" started-at="2019-09-03T12:47:15Z" finished-at="2019-09-03T12:47:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createnode -->
-      </class> <!-- MyAccount.com.Test.CreateNodePageTest -->
+        </test-method> <!-- updatepro -->
+      </class> <!-- MyAccount.com.Test.ProfileUpdateTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

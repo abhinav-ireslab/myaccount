@@ -18,12 +18,12 @@ public class SSLPage extends TestBaseNew {
 }
 
 
-	@FindBy(xpath="//*[@id=\"sidenav-menu\"]/ul/li[2]/a")
-	WebElement click_payment;
-	@FindBy(xpath = "//*[@id=\"sidenav-menu\"]/ul/li[3]/a")
-	WebElement click_Infra;
+	@FindBy(xpath="//*[@id=\"sidenav-menu\"]/ul/li[4]/a")
+	WebElement billing;
+	@FindBy(xpath = "//*[@id=\"sidenav-menu\"]/ul/li[5]/a")
+	WebElement securitypayment;
 
-	@FindBy(xpath="//*[@id=\"sidenav-menu\"]/ul/li[4]/ul/li[4]/a")
+	@FindBy(xpath="//html/body/div[1]/div/ul/li[6]/ul/li[2]/a")
 	//@FindBy(id = "id_first_name")
 	WebElement click_ssl;
  
@@ -91,9 +91,9 @@ public void nextbutton1() {
 	}
 public void sslfillform() throws InterruptedException {
 	driver.navigate().refresh();
-	click_payment.click();
+	billing.click();
 	Thread.sleep(3000);
-	click_Infra.click();
+	securitypayment.click();
 	 Thread.sleep(3000);
 
 	click_ssl.click();
