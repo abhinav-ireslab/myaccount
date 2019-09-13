@@ -35,8 +35,7 @@ public class TestBaseNew {
 				prop.load(ip);
 
 			} catch (Exception e) {
-				FileInputStream ip = new FileInputStream("C:\\Users\\E2E\\eclipse-workspace\\"
-						+ "AutomationE2E\\src\\main\\java\\MyAccount\\com\\Config\\config.properties");
+				FileInputStream ip = new FileInputStream("src/main/java/MyAccount/com/Config/config.properties");
 				prop.load(ip);
 
 			}
@@ -66,8 +65,7 @@ public class TestBaseNew {
 				driver = (WebDriver) new FirefoxDriver();
 
 			} catch (Exception e) {
-				System.setProperty("webdriver.gecko.driver",
-						"C:\\Users\\E2E\\eclipse-workspace\\AutomationE2E\\Drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver","Drivers/geckodriver.exe");
 				driver = (WebDriver) new FirefoxDriver();
 
 			}
@@ -79,13 +77,11 @@ public class TestBaseNew {
 			// Operating system is based on Linux/Unix/*AIX
 			try {
 
-				System.setProperty("webdriver.gecko.driver",
-						"C:\\Users\\E2E\\git\\New folder\\testing\\Drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver","C:\\Users\\E2E\\git\\New folder\\testing\\Drivers\\geckodriver.exe");
 				driver = (WebDriver) new FirefoxDriver();
 
 			} catch (Exception e) {
-				System.setProperty("webdriver.gecko.driver",
-						"C:\\Users\\E2E\\eclipse-workspace\\AutomationE2E\\Drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver","Drivers/geckodriver.exe");
 				driver = (WebDriver) new FirefoxDriver();
 
 			}
